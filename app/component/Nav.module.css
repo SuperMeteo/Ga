@@ -1,18 +1,40 @@
-/* app/components/Nav.module.css */
+/* /app/components/Nav.module.css */
 .logo {
-    max-width: 70px; /* ปรับขนาดโลโก้ตามที่ต้องการ */
-    height: auto; /* รักษาอัตราส่วนของโลโก้ */
+    max-width: 70px;
+    height: auto;
     margin-left: 30px;
-}   
-.navbar {
-    justify-content: center; /* จัดการเนื้อหาใน navbar ให้อยู่ตรงกลาง */  
-    border-bottom: 2px solid black; /* เพิ่มเส้นขอบด้านล่างของ Navbar ที่เป็นเส้นขอบสีดำ */
-    margin-bottom: 20px; /* ระยะห่างด้านล่างของ Navbar จากส่วนที่อยู่ข้างล่าง */
-}
-
-.carousel-inner img,    
-.container .row img {
-    width: 100%; /* ทำให้รูปภาพเต็มความกว้างของพื้นที่ที่กำหนด */
-    height: auto; /* รักษาอัตราส่วนของภาพ */
-    display: block; /* ลบพื้นที่ว่างด้านล่างของภาพ */
-}
+  }   
+  
+  .navbar {
+    justify-content: center;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* เพิ่มเงาให้กับ Navbar */
+    border-radius: 8px; /* เพิ่มกรอบของ Navbar */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* เพิ่ม transition เมื่อเปลี่ยนเงาและการเคลื่อนไหว */
+  }
+  
+  .navbar:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* เพิ่มเงาเมื่อโฮเวอร์ที่ Navbar */
+    transform: translateY(-2px); /* เลื่อน Navbar ลงเล็กน้อยเมื่อโฮเวอร์ */
+  }
+  
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease; /* เพิ่ม transition เมื่อเปลี่ยนสีของลิงก์ */
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* เปลี่ยนสีของลิงก์เมื่อโฮเวอร์ */
+  }
+  
