@@ -15,7 +15,7 @@ export default function About() {
           }}
         >
           <h2 className="text-center mb-4" style={{ color: '#333' }}>
-            เกี่ยวกับเรา
+            About
           </h2>
           <img
             src="img/about.png"

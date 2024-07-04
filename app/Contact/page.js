@@ -15,7 +15,7 @@ export default function About() {
           }}
         >
           <h2 className="text-center mb-4" style={{ color: '#333' }}>
-            ติดต่อ
+            Contact
           </h2>
           
        
