@@ -9,7 +9,7 @@ export default function Home() {
       <div id="carouselExample" class="carousel slide">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="/img/f1.jpg" width="1920" height="900" alt="Description" alt="..."></img>
+          <img src="/img/f1.jpg" width="1920" height="1080" alt="Description" alt="..."></img>
         </div>
       </div>
       </div>
