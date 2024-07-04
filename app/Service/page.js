@@ -1,5 +1,5 @@
 import Navbar from '/app/component/nav';
-
+import Footer from '/app/component/footer';
 export default function About() {
   return (
     <>
@@ -49,6 +49,8 @@ export default function About() {
         </div>
       </div>
       <br />
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <Footer />
     </>
   );
 }
