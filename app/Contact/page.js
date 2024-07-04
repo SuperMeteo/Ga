@@ -31,7 +31,7 @@ export default function About() {
         </div>
       </div>
       <br />
-      <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br> <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
       <Footer />
     </>
   );
