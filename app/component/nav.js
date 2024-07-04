@@ -8,7 +8,7 @@ export default function Nav() {
       <nav className={`navbar navbar-expand-lg ${styles.navbar}`}>
         <div className="container-fluid">
           <Link href="/" className="navbar-brand">
-            <img src="/img/2.png" className={styles.logo} alt="Logo" />
+            <img src="/img/1.png" className={styles.logo} alt="Logo" />
           </Link>
           <button
             className="navbar-toggler"
