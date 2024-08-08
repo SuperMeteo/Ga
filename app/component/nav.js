@@ -38,9 +38,9 @@ export default function Nav() {
             </ul>
           </div>
           <div className={styles.buttons}>
-            <button className={`btn btn-outline-primary ${styles.signInBtn}`} type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Sign In</button>
-            <button className={`btn btn-primary ${styles.signUpBtn}`} type="button" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
-          </div>
+          <Link href="/signup" className="btn btn-outline-primary">Sign In</Link>   
+          <Link href="/signup" className="btn btn-outline-primary">Sign Up</Link>
+</div>  
         </div>
       </nav>
     </>

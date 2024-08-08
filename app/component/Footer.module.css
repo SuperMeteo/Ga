@@ -1,23 +1,20 @@
-/* app/components/Footer.module.css */
+/* app/components/Layout.module.css */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ให้แน่ใจว่าคอนเทนเนอร์มีความสูงเต็มที่ */
+}
+
+.main {
+  flex: 1; /* ให้เนื้อหาหลักเติบโตและผลักฟุตเตอร์ลงด้านล่าง */
+}
+
 .footer {
-    text-align: center; /* จัดให้อยู่ตรงกลาง */
-    background-color: #2c3e50; /* สีพื้นหลัง */
-    padding: 10px; /* ระยะห่างขอบ */
-    bottom: 0;
-    width: 100%;
-    font-size: 16px; /* ตั้งค่าขนาดตัวอักษร */
-    color: #ecf0f1; /* สีตัวอักษร */
-    font-family: 'Arial', sans-serif; /* แบบอักษร */
-    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1); /* เงา */
-  }
-  
-  .footer a {
-    color: #3498db; /* สีลิงก์ */
-    text-decoration: none; /* ลบเส้นใต้ลิงก์ */
-    transition: color 0.3s ease; /* การเปลี่ยนสีลิงก์เนื้อหา */
-  }
-  
-  .footer a:hover {
-    color: #2980b9; /* สีลิงก์เมื่อโฮเวอร์ */
-  }
-  
+  background-color: #2c3e50; /* สีพื้นหลัง */
+  padding: 10px; /* ระยะห่างขอบ */
+  text-align: center; /* จัดให้อยู่ตรงกลาง */
+  font-size: 16px; /* ขนาดตัวอักษร */
+  color: #ecf0f1; /* สีตัวอักษร */
+  font-family: 'Arial', sans-serif; /* แบบอักษร */
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1); /* เงา */
+}
