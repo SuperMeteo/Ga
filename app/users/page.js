@@ -2,6 +2,8 @@
 import Link from 'next/link'
 
 import { useEffect, useState } from 'react';
+import Navbar from '/app/component/nav';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Page() {
   const [items, setItems] = useState([]);
@@ -27,7 +29,7 @@ export default function Page() {
 
   return (
     <>
-
+<Navbar />
     <br /><br /><br /><br />
     <div className="container">
       <div class="card">

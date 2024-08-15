@@ -38,7 +38,7 @@ export default function Nav() {
             </ul>
           </div>
           <div className={styles.buttons}>
-          <Link href="/signup" className="btn btn-outline-primary">Sign In</Link>   
+          <Link href="/signin" className="btn btn-outline-primary">Sign In</Link>   
           <Link href="/signup" className="btn btn-outline-primary">Sign Up</Link>
 </div>  
         </div>
