@@ -2,11 +2,10 @@
 import Link from 'next/link'
 
 import { useEffect, useState } from 'react';
-import Navbar from '/app/component/nav';
-import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Page() {
   const [items, setItems] = useState([]);
+
   useEffect(() => {
     async function getUsers() {
       try {
@@ -24,12 +23,13 @@ export default function Page() {
  
   getUsers()
   const interval  = setInterval(getUsers, 1000);
-  return () => clearInterval(interval );
+  return () => clearInterval(interval);
 }, []);
+
 
   return (
     <>
-<Navbar />
+
     <br /><br /><br /><br />
     <div className="container">
       <div class="card">
@@ -54,8 +54,8 @@ export default function Page() {
               <td className='text-center'>{item.id}</td>
               <td>{item.firstname}</td>
               <td>{item.lastname}</td>
-              <td><Link href="/users/edit" className="btn btn-warning">Edit</Link></td>
-              <td><Link href="#" className="btn btn-danger">Del</Link></td>
+              <td><Link href={`/users/edit/${item.id}`} className="btn btn-warning">Edit</Link></td>
+              <td><Link href={`/users/del/${item.id}`} className="btn btn-danger">Del</Link></td>
             </tr>
           ))}
         </tbody>
