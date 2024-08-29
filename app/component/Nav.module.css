@@ -1,39 +1,81 @@
 /* /app/components/Nav.module.css */
 .logo {
-    max-width: 70px;
-    height: auto;
-    margin-left: 30px;
-  }   
-  
-  .navbar {
-    justify-content: center;
-    border-bottom: 2px solid black;
-    margin-bottom: 20px;
-    background-color: #f8f9fa;
-    padding: 10px 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* เพิ่มเงาให้กับ Navbar */
-    border-radius: 8px; /* เพิ่มกรอบของ Navbar */
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* เพิ่ม transition เมื่อเปลี่ยนเงาและการเคลื่อนไหว */
-  }
-  
-  .navbar:hover {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* เพิ่มเงาเมื่อโฮเวอร์ที่ Navbar */
-    transform: translateY(-2px); /* เลื่อน Navbar ลงเล็กน้อยเมื่อโฮเวอร์ */
-  }
-  
-  .navbar-nav {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-link {
-    color: #333;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease; /* เพิ่ม transition เมื่อเปลี่ยนสีของลิงก์ */
-  }
-  
-  .nav-link:hover {
-    color: #007bff; /* เปลี่ยนสีของลิงก์เมื่อโฮเวอร์ */
-  }
+  max-width: 70px;
+  height: auto;
+  margin-left: 30px;
+}
+
+.navbar {
+  justify-content: center;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.navbar:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transform: translateY(-2px);
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #333;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+/* Custom styles for the welcome message and buttons */
+.navbar-text {
+  font-size: 1.2rem;
+  font-weight: 500; /* Medium weight for a slightly lighter look */
+  color: #333; /* Darker color for better readability */
+  margin-right: 15px;
+  padding: 5px 10px;
+  border-radius: 20px; /* Rounded corners */
+  background-color: #e9ecef; /* Light background for the welcome message */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+.btn-outline-danger {
+  border-color: #dc3545;
+  color: #dc3545;
+  border-radius: 20px; /* Rounded corners */
+  padding: 8px 16px; /* Padding for a more prominent button */
+  font-size: 1rem; /* Slightly smaller font size */
+  font-weight: 500; /* Medium weight for better readability */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+  border-radius: 20px; /* Rounded corners */
+  padding: 8px 16px; /* Padding for a more prominent button */
+  font-size: 1rem; /* Slightly smaller font size */
+  font-weight: 500; /* Medium weight for better readability */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}

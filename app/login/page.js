@@ -13,7 +13,7 @@ export default function Page() {
 
   const handleLogin = async (e) => {
     e.preventDefault();
-
+  
     try {
       const res = await fetch('http://localhost:3000/api/login', {
         method: 'POST',
@@ -22,23 +22,20 @@ export default function Page() {
         },
         body: JSON.stringify({ username, password }),
       });
-
+  
       const result = await res.json();
-
+  
       if (res.ok) {
-        // ถ้า login สำเร็จ เก็บ token ลงใน localStorage
+        // บันทึก token และรายละเอียดผู้ใช้ใน localStorage
         localStorage.setItem('token', result.token);
-        console.log(result);
-        
-        // ตั้งค่าข้อความแจ้งเตือน
+        localStorage.setItem('user', JSON.stringify({ username })); // บันทึกรายละเอียดผู้ใช้
         setMessage('Login successful!');
-
+  
         // เปลี่ยนไปยังหน้า http://localhost:3001/ หลังจากล็อกอินสำเร็จ โดยไม่ต้องยืนยัน
         setTimeout(() => {
           window.location.href = 'http://localhost:3001/';
         }, 1000); // รอ 1 วินาทีก่อนเปลี่ยนหน้า
       } else {
-        // ตั้งค่าข้อความผิดพลาดจาก backend
         setMessage(result.error);
       }
     } catch (error) {
@@ -46,6 +43,7 @@ export default function Page() {
       setMessage('An error occurred during login.');
     }
   };
+  
 
   return (
     <>
