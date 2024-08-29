@@ -1,6 +1,9 @@
 'use client';
 import { useState } from 'react';
-
+import Navbar from '/app/component/nav';
+import Footer from '/app/component/footer';
+import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap-icons/font/bootstrap-icons.css';
 export default function Page() {
 
   const [firstname, setFirstName] = useState('');
@@ -25,6 +28,7 @@ export default function Page() {
 
   return (
     <>
+    <Navbar />
     <br /><br /><br />
     <div className="container">
     <div class="card">
@@ -70,6 +74,8 @@ export default function Page() {
 </div>
 
 </div>
+<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+<Footer />
     </>
   );
 }
